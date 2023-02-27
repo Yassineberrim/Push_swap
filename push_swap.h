@@ -6,7 +6,7 @@
 /*   By: yberrim <yberrim@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 13:22:32 by yberrim           #+#    #+#             */
-/*   Updated: 2023/02/25 12:46:10 by yberrim          ###   ########.fr       */
+/*   Updated: 2023/02/27 13:43:29 by yberrim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,8 @@ int check_min_int(int ac, char **av);
 int has_not_digit(int ac, char **av);
 typedef struct s_stack 
 {
-    int value;
-    struct s_stack *next;
+    int size;
+    int *stack;
 }t_stack;
 
 #endif 
