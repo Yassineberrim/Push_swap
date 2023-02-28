@@ -6,7 +6,7 @@
 /*   By: yberrim <yberrim@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 13:22:32 by yberrim           #+#    #+#             */
-/*   Updated: 2023/02/27 13:43:29 by yberrim          ###   ########.fr       */
+/*   Updated: 2023/02/28 21:54:09 by yberrim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,14 @@
 #include<unistd.h>
 #include<string.h>
 #include<limits.h>
+typedef struct s_stack 
+{
+    int* stack_a;
+    int* stack_b;
+    int stack_a_size;
+    int stack_b_size;
+}t_stack;
+
 
 int ft_isdigit(char c);
 long int	ft_atoi(const char *str);
@@ -25,10 +33,12 @@ int check_duplicate(int ac, char **av);
 int check_max_int(int ac, char **av);
 int check_min_int(int ac, char **av);
 int has_not_digit(int ac, char **av);
-typedef struct s_stack 
-{
-    int size;
-    int *stack;
-}t_stack;
+void ss(t_stack *stack);
+void sa(t_stack *stack);
+void sb(t_stack *stack);
+void push(t_stack *stack, int n);
+void pa(t_stack *stack);
+void pb(t_stack* stacks);
+int pop(t_stack *stack);
 
 #endif 
