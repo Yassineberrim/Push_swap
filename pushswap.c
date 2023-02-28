@@ -6,7 +6,7 @@
 /*   By: yberrim <yberrim@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 13:22:30 by yberrim           #+#    #+#             */
-/*   Updated: 2023/02/28 22:06:05 by yberrim          ###   ########.fr       */
+/*   Updated: 2023/02/28 22:32:06 by yberrim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,16 @@
 #include<stdlib.h>
 #include <stdio.h>
 
-
+/*Le code définit une fonction appelée read_arg 
+qui prend en paramètre un pointeur vers une structure t_stack,
+un tableau de chaînes de caractères av et un entier size. 
+La fonction initialise deux tableaux d'entiers dans la structure 
+t_stack appelés stack_a et stack_b avec une taille de size. 
+Ensuite, elle parcourt le tableau av et convertit chaque élément 
+de chaîne en un entier à l'aide de la fonction ft_atoi,
+et affecte l'entier résultant à l'index correspondant de stack_a. 
+Enfin, la fonction définit la taille de stack_a à size et définit 
+la taille de stack_b à 0*/
 void read_arg(t_stack *stack,char **av, int size)
 {
     int i;
