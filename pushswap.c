@@ -6,7 +6,7 @@
 /*   By: yberrim <yberrim@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 13:22:30 by yberrim           #+#    #+#             */
-/*   Updated: 2023/02/28 22:32:06 by yberrim          ###   ########.fr       */
+/*   Updated: 2023/02/28 22:49:08 by yberrim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,9 +55,8 @@ int main(int ac, char **av)
     read_arg(&stack,av + 1,ac - 1);
     // sa(&stack);
     // sb(&stack);
-    // ss(&stack);
-    pb(&stack);
-    pb(&stack);
+    ss(&stack);
+    // pb(&stack);
     int i;
     i = 0;
     while (i < stack.stack_a_size)
