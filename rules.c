@@ -6,7 +6,7 @@
 /*   By: yberrim <yberrim@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/24 15:24:04 by yberrim           #+#    #+#             */
-/*   Updated: 2023/03/02 21:55:08 by yberrim          ###   ########.fr       */
+/*   Updated: 2023/03/02 22:33:34 by yberrim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,7 +76,8 @@ void ra(t_stack* stack)
     stack->stack_a[0] = tmp;
     printf("ra\n");
 }
-void rb(t_stack *stack) {
+void rb(t_stack *stack)
+{
     if (stack->stack_b_size < 2)
         return;
     int tmp = stack->stack_b[stack->stack_b_size - 1];
@@ -112,7 +113,8 @@ void rra(t_stack *stack)
     printf("rra\n");
 }
 
-void rrb(t_stack *stack) {
+void rrb(t_stack *stack)
+{
     if (stack->stack_a_size < 2)
         return;
     int tmp = stack->stack_a[0];
